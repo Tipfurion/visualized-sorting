@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(122, 122, 122);
+}
+
+.block{ 
+            
+    width:50px;
+    height:50px;
+    text-align: center;
+    font-size:150%;
+    line-height:50px;
+    border-radius:10px;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    text-shadow: black 0 0 5px;
+    color: white;
+    margin: auto;
+    font-family: monospace;
+}
+.button{
+    width:100px;
+    height:50px;
+    line-height:50px;
+    border-radius:10px;
+    color: white;
+    font-size:150%;
+    text-align: center;
+    background-color: black;
+    margin: auto;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: monospace;
+}
+.menu-block{
+    width:100px;
+    height:70px;
+    line-height:35px;
+}
+#animation-div{
+    margin: auto;
+    padding: 10px;
+}
+#head{
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-family: monospace;
+    
+}
+#tablee{
+    margin: auto;
+}
+#text-content{
+    width: 30%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    font-size: 17px;
+    font-family: monospace;
+}
+#button-box{
+    padding: 50px;
+}
+h1{
+    font-size: 500%;
+}
+
