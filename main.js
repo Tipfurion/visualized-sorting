@@ -4,9 +4,13 @@ let textContent = document.getElementById("text-content");
 let sortName = document.getElementById("sort-name");
 const animDuration = 1000;
 const arrSize = 10;
+const seekInput = document.getElementsByClassName("seek")[0];
 let anim = anime.timeline({
     autoplay: false,
-    duration: animDuration,});
+    duration: animDuration,
+    update: function(anim) {
+        seekInput.value = anim.progress;
+      }});
 let flag = false;
 let currentSorting;
 let currentSortingStr;
@@ -254,4 +258,8 @@ function quickSort(arr,left = 0 ,right = arrSize-1) {
     }
     return arr;
 }
+seekInput.oninput = function() {
+    anim.seek(anim.duration * (seekInput.value / 100));
+  };
+anim.addEventListener()
 

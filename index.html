@@ -8,9 +8,19 @@
         </style>
     </head>
     <body>
+        
         <header>
             <div id="head">
                 <h1>Sorting algorithms</h1>
+                <div id = menu>
+                    <table style="margin: auto">
+                        <tr>
+                            <td><div class="button menu-block" id="bubbleSortBtn" >bubble sort</div></td>
+                            <td><div class="button menu-block" id="quickSortBtn">quick <br>sort</div></td>
+
+                            </td>
+                        </tr>
+                    </table>
                 <h2 id="sort-name">Bubble sort</h2>
             </div>
         </header>
@@ -24,23 +34,16 @@
                     <div class="button" id="startButton">
                         <p>play</p>
                     </div>
-                </div>
+                    <div id="progress-line">
+                     <input class="seek" step="0.1" type="range" min="0" max="100" value="0"> <span class="seek-value"></span></p>
+                    </div>
         </div>
             <div id="text-content">
                 <p>	
                     Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.
                 </p>
             </div> 
-        <div id = menu>
-            <table style="margin: auto">
-                <tr>
-                    <td><div class="button menu-block" id="bubbleSortBtn" >bubble sort</div></td>
-                    <td><div class="button menu-block" id="quickSortBtn">quick <br>sort</div></td>
-                    <td><div class="button menu-block" >insertion Sort</div></td>
-                    <td><div class="button menu-block" >merge sort</div></td>
-                    </td>
-                </tr>
-            </table>
+
         </div>    
         <script src="anime.min.js"></script>
         <script src="main.js"></script>
